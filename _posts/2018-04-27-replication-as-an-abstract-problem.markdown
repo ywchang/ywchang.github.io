@@ -8,7 +8,7 @@ categories: jekyll update
 
 [Understanding Replication in Database and Distributed Systems [ M. Wiesmann, F. Pedone, A. Schiper & B. Kemme, G. Alonso ]](https://pdfs.semanticscholar.org/d0b5/b68e0b7c60dda9de967b3c14937693d0e680.pdf)
 
-##### Request Phase
+#### Request Phase
 
 During the request phase, a client submits an operation to the system. This can be done in two
 ways: the client can directly send the operation to all replicas or the client can send the operation to one replica which will then send the operation to all others as part of the server coordination phase.

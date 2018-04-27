@@ -4,7 +4,7 @@ title:  "Replication as an abstract problem"
 date:   2018-04-27 17:33:38 +0700
 categories: jekyll update
 ---
-### Paper source
+## Paper source
 
 [Understanding Replication in Database and Distributed Systems [ M. Wiesmann, F. Pedone, A. Schiper & B. Kemme, G. Alonso ]](https://pdfs.semanticscholar.org/d0b5/b68e0b7c60dda9de967b3c14937693d0e680.pdf)
 

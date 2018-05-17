@@ -4,7 +4,7 @@ title:  "Distinguish events"
 date:   2018-05-17 20:58:00 +0700
 categories: The Effective Executive
 ---
-`tag`: `The Effective Executive`
+TAG: `The Effective Executive`
 
 The executive has to make decisions. Actually, everyone can't avoid making decisions. So it will make a big difference if one knows how to make an effective decision. Decision also comes to solve some problems, issues and avoid some events. It means probably, the first lesson of making effective decisions, is to distinguish different types of issues or events.
 

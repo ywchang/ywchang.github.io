@@ -32,10 +32,28 @@ The determinism constraint is the major drawback of this approach. Someone will 
 
 Following steps are involved in active replication. 
 
-* 1. The client sends the request to the servers using an Atomic Broadcast.
-* 2. Server coordinate is given by the total order of property of the Atomic Broadcast.
-* 3. All replicas execute the request in the order they are delivered. 
-* 4. No coordination is necessary, as all replicas process the same request in the same order. Because replicas are deterministic, they all produce the same results.
-* 5. All replica send back their result to the client, and the client typically only waits for the first answer(the others are ignored). 
+1. The client sends the request to the servers using an Atomic Broadcast.
+2. Server coordinate is given by the total order of property of the Atomic Broadcast.
+3. All replicas execute the request in the order they are delivered. 
+4. No coordination is necessary, as all replicas process the same request in the same order. Because replicas are deterministic, they all produce the same results.
+5. All replica send back their result to the client, and the client typically only waits for the first answer(the others are ignored). 
 
 #### Passive Replication
+
+Passive Replication, also called Primary Backup replication, is a alternative approach, that can be used in a non-deterministic scenario, which is the biggest drawback for Active Replication method.
+
+This is how it works. The clients send requests to a primary node, or leader node, or master node, you name it. This primary executes these requests and then sends updates to other backup nodes. So that means for backup node, there is no execution at all, just to apply the updates.
+
+VSCAST is the usually the implementation mechanism to ensure the channels being properly set up and updates being transmitted among primary and backups. Details are not covered here.
+
+Since only updates are transmitted within group, so the processing power can be saved comparing with Active Replication. But Passive Replication suffers from a high reconfiguration cost when the primary fails.
+
+![Passive Replication Steps](https://raw.githubusercontent.com/ywchang/ywchang.github.io/master/_imgs/passive-replication.png)
+
+The steps of the workflow,
+
+1. The client sends the request  to the primary
+2. There is no initial coordination
+3. The primary executes the request
+4. The primary coordinates with the other replicas by sending the update information to the backups
+5. The primary sends the answer to the client

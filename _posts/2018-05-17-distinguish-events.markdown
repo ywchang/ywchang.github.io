@@ -4,7 +4,6 @@ title:  "Distinguish events"
 date:   2018-05-17 20:58:00 +0700
 categories: The Effective Executive
 ---
-TAG: `The Effective Executive`
 
 The executive has to make decisions. Actually, everyone can't avoid making decisions. So it will make a big difference if one knows how to make an effective decision. Decision also comes to solve some problems, issues and avoid some events. It means probably, the first lesson of making effective decisions, is to distinguish different types of issues or events.
 
@@ -43,3 +42,5 @@ The effective decision-maker, therefore always assumes initially that the proble
 And if the event is truly unique, the experienced decision-maker suspect that this heralds a new underlying problem and that what appears as unique will turn out to have been simply the first manifestation of a new generic situation.
 
 Last, The decision-maker also always tests for signs that something atypical, something unusual, is happening; he always asks: “Does the explanation explain the observed events and does it explain all of them?”; he always writes out what the solution is expected to make happen and then tests regularly to see if this really happens; and finally, he goes back and thinks the problem through again when he sees something atypical, when he finds phenomena his explanation does not really explain, or when the course of events deviates, even in details, from his expectations.
+
+> Reference from the book, `The effective executive` by Peter Drucker

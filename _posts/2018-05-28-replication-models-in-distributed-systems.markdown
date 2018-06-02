@@ -4,7 +4,6 @@ title:  "Replication models in distributed systems"
 date:   2018-05-28 22:04:00 +0800
 categories: Replication
 ---
-TAG: `Replication` `Distributed System`
 
 Fault tolerance is a very crucial property for distributed systems, because the network is not reliable, and expects to be likely to fail at any time. That means in order to make the distributed system to work properly, we have to replicate data into different nodes, so that any node fails, the data is not actually lost. Here in this post I am going to introduce the common and different strageties to implement replication in distributed systems.
 
@@ -75,3 +74,5 @@ As always, here is the workflow of steps for this approach
 #### Summary
 
 Time for the summary. We have described three ways to make replicas running in different nodes, so that we can gain the ability of fault tolerance in the distributed systems. Among them, active replication is conceptually simplest approach, but it has the most significant drawback, which is the inability to handle non-deterministic calculation. Passive and semi-active approaches can handle non-deterministic scenarios, but will pay high cost for reconfiguration of switching leader node. Besides that, under the hood, group communication primitives, such as ABCAST and VSCAST ensure the communication quality and order among all the nodes, which make all the beautiful things happen. 
+
+> Reference from the paper, `Understanding Replication in Databases and Distributed Systems`

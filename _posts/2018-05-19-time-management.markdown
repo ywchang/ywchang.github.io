@@ -4,7 +4,6 @@ title:  "时间管理"
 date:   2018-05-19 12:36:00 +0700
 categories: The Effective Executive
 ---
-TAG: `The Effective Executive` `卓有成效的管理者`
 
 曾经有份真挚的建议摆在我的面前，我没有珍惜，等到失去的时候才后悔莫急，人世间最痛苦的事莫过余此，如果上天在给我一次机会，我会对那个给我建议的人说三个字，你说的真的太对了！这个真挚的建议就是，做好时间管理。
 
@@ -51,3 +50,6 @@ TAG: `The Effective Executive` `卓有成效的管理者`
 #### 最后
 
 要做成一些事儿，达成一些目标，我相信时间管理是一个前置条件。有了充分时间的保证，我们才有可能把纸上的计划，脑海中的蓝图付诸实践。不仅如此，我觉得这是一道必须迈过的坎儿。过了这个坎儿，你就会发现，更大更好玩的事儿就在不远的前面。
+
+
+> Reference from the book, `The effective executive` by Peter Drucker

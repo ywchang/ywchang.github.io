@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Replication models in distributed systems"
+title:  "Replication in distributed systems"
 date:   2018-05-28 22:04:00 +0800
 categories: Replication
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Distinguish events"
+title:  "Analyze events"
 date:   2018-05-17 20:58:00 +0700
 categories: The Effective Executive
 ---

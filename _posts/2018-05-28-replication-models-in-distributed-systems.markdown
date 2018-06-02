@@ -57,3 +57,21 @@ The steps of the workflow,
 3. The primary executes the request
 4. The primary coordinates with the other replicas by sending the update information to the backups
 5. The primary sends the answer to the client
+
+#### Semi-Active Replication
+
+Semi-active replication is an intermediate approach between the passive and active ways. Basically, it supports both, that means when the request causes an deterministic change, it will go with active replication, every node will calculate for themselves, without the need for talking with each other. However, when the request produce a non-deterministic result, there will be the leader, or primary, or master while you name it, to handle the calculation and after that speard the updates to all the rest nodes. 
+
+![Active Replication](https://raw.githubusercontent.com/ywchang/ywchang.github.io/master/_imgs/semi-active-replication.png)
+
+As always, here is the workflow of steps for this approach
+
+1. The client sends the request to the servers using an Atomic Broadcast
+2. The servers coordinate using the order given by this Atomic Broadcast
+3. All replicas execute the request in the order they are delivered
+4. In case of a non deterministic choice, leader informs the followers using the View Synchronous Broadcast
+5. The servers sends back the response to the client
+
+#### Summary
+
+Time for the summary. We have described three ways to make replicas running in different nodes, so that we can gain the ability of fault tolerance in the distributed systems. Among them, active replication is conceptually simplest approach, but it has the most significant drawback, which is the inability to handle non-deterministic calculation. Passive and semi-active approaches can handle non-deterministic scenarios, but will pay high cost for reconfiguration of switching leader node. Besides that, under the hood, group communication primitives, such as ABCAST and VSCAST ensure the communication quality and order among all the nodes, which make all the beautiful things happen. 

@@ -35,6 +35,14 @@ categories: consulting
 
 说到这，你是否觉得信任的这些特征似乎与生活中的一些场景似曾相识？没错，`信任就像是一场赌博`。你会小心翼翼的下注，并且可能在输过一次之后，不会再赌同样的选择，因为你不想变成一个摔倒两次的笨蛋。相反，当别人把信任的赌注押在你身上时，当心，不要让别人因此输光。
 
+<script src="https://utteranc.es/client.js"
+        repo="ywchang/ywchang.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
 
 
 

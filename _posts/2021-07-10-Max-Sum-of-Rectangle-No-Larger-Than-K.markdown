@@ -7,7 +7,7 @@ categories: algorithm
 
 This post is trying to solve a problem showing up recently in monthly challenge. It's been marked as a hard problem, and it's probably easy to be clueness when first met because it needs to combine several tricks together to solve it effectively.
 
-#### The problem - Max Sum of Rectangle No Larger Than K
+Below is the problem of `Max Sum of Rectangle No Larger Than K`.
 
 Given an `m x n` matrix `matrix` and an integer `k`, return the max sum of a rectangle in the matrix such that its sum is no larger than `k`.
 
@@ -15,7 +15,7 @@ It is guaranteed that there will be a rectangle with a sum no larger than `k`.
 
 Example 1:
 
-![Grid Sum](../_imgs/2021-07-10-example-grid-sum.jpeg)
+![Grid Sum](https://github.com/ywchang/ywchang.github.io/blob/master/_imgs/2021-07-10-example-grid-sum.jpeg?raw=true)
 
 ```
 Input: matrix = [[1,0,1],[0,-2,3]], k = 2

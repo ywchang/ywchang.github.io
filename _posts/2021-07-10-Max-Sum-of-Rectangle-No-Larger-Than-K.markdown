@@ -36,6 +36,12 @@ So, to get the max sum of a rectangle in the matrix such that its sum is no larg
 
 Let's probably pause here for a little bit. Instead of trying to come up with solution for a matrix, let's take a step back and think about what solution we can come up with if this is an array, which has only one dimension. Actually there are some links related to this problem on stackoverflow, like this one [https://stackoverflow.com/questions/39084147/largest-sum-of-contiguous-subarray-no-larger-than-k](https://stackoverflow.com/questions/39084147/largest-sum-of-contiguous-subarray-no-larger-than-k). But anyway, the problem statement is something like below. 
 
+Let's say we have a array, `[2, 2, -1]`, then we need to know the max subarray sum which can't be larger than `k`.
+
+If `k = 0`, then the resut is -1, which the subarray is `[-1]`
+If `k = 3`, then the result is 3, which the subarray is `[2, -1]`
+
+How do you solve this problem? Here, we keep hearing the subarray sum, so probably a handy tool that we can use to make calculating subarray sum easier, which is `prefix sum` or `cumulative sum` data structure.
 
 
 

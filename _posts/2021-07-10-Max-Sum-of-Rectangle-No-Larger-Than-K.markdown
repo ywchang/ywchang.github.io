@@ -47,8 +47,31 @@ So the `prefix sum` data structure can help to make the calculation of subarray 
 
 Below are some legit Java codes to demonstrate how to use prfix sum data structure to calculate any subarray sum by giving a range index (both inclusive).
 
-```Java
+```
+public class TryPrefixSum {
+        public int calculateSubArraySum(int[] arr, int start, int end) {
+                int[] prefixSum = getPrefixSum(arr);
+                return prefixSum[end + 1] - prefixSum[start];
+        }
 
+        private int[] getPrefixSum(int[] arr) {
+                int[] prefixSum = new int[arr.length + 1];
+                prefixSum[0] = 0;
+                for(int i = 0; i < arr.length; i++) {
+                        prefixSum[i + 1] = arr[i] + prefixSum[i];
+                }
+                return prefixSum;
+        }       
+
+        public static void main(String[] args) {
+                System.out.println(
+                        new TryPrefixSum().calculateSubArraySum(new int[] {1, 2, 3, 4}, 0, 2)
+                ); // => 6
+                System.out.println(
+                        new TryPrefixSum().calculateSubArraySum(new int[] {1, 2, 3, 4}, 1, 2)
+                ); // => 5
+        }
+}
 ```
 
 

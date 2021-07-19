@@ -43,6 +43,14 @@ If `k = 3`, then the result is 3, which the subarray is `[2, -1]`
 
 How do you solve this problem? Here, we keep hearing the subarray sum, so probably a handy tool that we can use to make calculating subarray sum easier, which is `prefix sum` or `cumulative sum` data structure.
 
+So the `prefix sum` data structure can help to make the calculation of subarray sum very fast with O(1) time complexity. Let's imagine we have a array `[1, 2, 3, 4]`, and then the corresponding prefix sum will be `[1, 3, 6, 10]`. Thus in order to calculate the subarray sum with index range `[1, 2]`, we just need to use `prefix_sum[2] - prefix_sum[0]`, instead of selecint the proper elements and sum them up everytime. You probably have found out that we can't calcualte the subarray sum with range starting at 0, because then we will have prefix_sum[-1] which is not legal. That's totally right, and that's why in practice we pad a 0 in the very beginning to work around that, in that sense, the example above will have a prefix sum like `[0, 1, 3, 6, 9]`. Then generally a calculation of range [i, j] can be converted to `prefix_sum[j + 1] - prefix_sum[i]`. 
+
+Below are some legit Java codes to demonstrate how to use prfix sum data structure to calculate any subarray sum by giving a range index (both inclusive).
+
+```Java
+
+```
+
 
 
 <script src="https://utteranc.es/client.js"

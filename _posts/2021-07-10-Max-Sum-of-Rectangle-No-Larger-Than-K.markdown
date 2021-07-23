@@ -74,6 +74,14 @@ public class TryPrefixSum {
 }
 ```
 
+With above knowledge, now we can try to solve the `no larger than K` part. Let's refresh by repeating the problem statement again.
+
+Let's say we have a array, `[2, 2, -1]`, then we need to know the max subarray sum which can't be larger than `k`.
+
+If `k = 0`, then the resut is -1, which the subarray is `[-1]`
+If `k = 3`, then the result is 3, which the subarray is `[2, -1]`
+
+Suppose with index i, we have Sum[i+1] to be the related prefix sum. Then we can iterate from Sum[0] to Sum[i], let's mark it as Sum[j]. For each Sum[j], we use d = Sum[i] - Sum[j]. Then we can find the best d for index i, which is no larger than k, but it's the clostest. Cleary we can have a optimization here, if we find the d is equal to k, then we can just stop finding, and return k directly. So if the array size is N, we will have time complexity being O(N\*N). Can we do better at finding the d more efficiently for each index i?
 
 
 <script src="https://utteranc.es/client.js"
